@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E748507B-4677-4F1E-A700-727B1D000A3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Medicine_Management</RootNamespace>
+    <AssemblyName>Medicine Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Company.Designer.cs">
+      <DependentUpon>Add Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Medicine.Designer.cs">
+      <DependentUpon>Add Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Sale.Designer.cs">
+      <DependentUpon>Add Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Stock.Designer.cs">
+      <DependentUpon>Add Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All Stock.Designer.cs">
+      <DependentUpon>All Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company List.Designer.cs">
+      <DependentUpon>Company List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company Report.Designer.cs">
+      <DependentUpon>Company Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbaord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbaord.Designer.cs">
+      <DependentUpon>Dashbaord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Company.Designer.cs">
+      <DependentUpon>Edit Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit medicine.Designer.cs">
+      <DependentUpon>Edit medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicine Report.Designer.cs">
+      <DependentUpon>Medicine Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicne List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicne List.Designer.cs">
+      <DependentUpon>Medicne List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales List.Designer.cs">
+      <DependentUpon>Sales List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Report.Designer.cs">
+      <DependentUpon>Sales Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Company.Designer.cs">
+      <DependentUpon>View Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Medicine.Designer.cs">
+      <DependentUpon>View Medicine.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Company.resx">
+      <DependentUpon>Add Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Medicine.resx">
+      <DependentUpon>Add Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Sale.resx">
+      <DependentUpon>Add Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Stock.resx">
+      <DependentUpon>Add Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Stock.resx">
+      <DependentUpon>All Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company List.resx">
+      <DependentUpon>Company List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company Report.resx">
+      <DependentUpon>Company Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbaord.resx">
+      <DependentUpon>Dashbaord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Company.resx">
+      <DependentUpon>Edit Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit medicine.resx">
+      <DependentUpon>Edit medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicine Report.resx">
+      <DependentUpon>Medicine Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicne List.resx">
+      <DependentUpon>Medicne List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sales List.resx">
+      <DependentUpon>Sales List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Report.resx">
+      <DependentUpon>Sales Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Company.resx">
+      <DependentUpon>View Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Medicine.resx">
+      <DependentUpon>View Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images_PiO_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon_150670.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon_150670 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pill_icon_icons_com_53621_KSQ_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_circle_create_expand_new_plus_icon_123218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil-striped-symbol-for-interface-edit-buttons_icon-icons.com_56782.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-29_icon-icons.com_73943.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-29_icon-icons.com_739431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-29_icon-icons.com_73943 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicines-medical-supplies-placed-blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicines-medical-supplies-placed-blue %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+</Project>
